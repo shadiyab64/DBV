@@ -1,27 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Web Development!</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS ANIMATION -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+<!--   GOOGLE FONTS - OPTIONAL -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet"> 
+<!--   jQUERY -->
+  <!-- ATTENTION AOT STUDENTS!:
+  Visit https://developers.google.com/speed/libraries#jquery and update the BELOW CDN to the latest version of jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+<!--    BOOTSTRAP -->
+   <!-- ATTENTION AOT STUDENTS!:
+  Visit getbootstrap.com and update the BELOW CDN to the latest version of Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<!--   CUSTOM CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <title>Random Advice Generator v1</title>
 </head>
 <body>
-    <header>
-        <h1>Hello, CS 140 Creators!🎨</h1>
-    </header>
-    <main>
-        <section>
-            <p>This is your canvas, and with HTML, CSS, and JavaScript, you're going to create something amazing. Ready, set, code! ✨</p>
-        </section>
-        <section>
-            <button id="funButton">Click Me for Fun!</button>
-            <p id="funText"></p>
-        </section>
-    </main>
-    <footer>
-        <p>Happy Coding! 🚀</p>
-    </footer>
-    <script src="script.js"></script>
+  <header id="top" class="d-flex align-items-center">
+    <div class="container text-center">
+    <h1 class="display-1 fw-bold">Daily Bible Verse</h1>
+    <h5>Come back tomorrow for another Bible Verse</h5>
+      
+    </div>
+  </header>
+<main>
+    <div class="container">
+        <div class='d-flex justify-content-center'>
+            <style>
+              .bible-verse-container {
+                  background: #fefae0;
+                  text-align: center;
+                  border: 1px solid #000000;
+                  padding: 2px 0px 3px;
+                  margin: 0px;
+                  width: 100%;
+                  font-family: 'Roboto Mono', monospace;
+              }
+              .bible-verse-link {
+                  color: #000000;
+                  font-size: 24px; 
+                  padding: 0px;
+                  margin: 0px;
+                  border: 0px;
+                  font-weight: normal;
+                  font-style: normal;
+                  text-decoration: none;
+                  background: #fefae0;
+              }
+              .bible-verse-footer {
+                  text-align: center;
+                  color: #000000;
+                  padding: 0px;
+                  margin: 3px 4px 0px;
+                  border: 0px;
+                  font-family: 'Roboto Mono', monospace;
+                  font-size: 20px;
+              }
+          </style>
+      </head>
+      <body>
+          <div class="bible-verse-container">
+              <p class="bible-verse-footer">
+                  <script type="text/javascript" src="https://www.christianity.com/bible/syndicate.php?content=dbv&amp;type=js2&amp;tw=100%25&amp;tbg=FFFFFF&amp;bw=1&amp;bc=000000&amp;ta=C&amp;tc=000000&amp;tf=Roboto+Mono&amp;ts=24&amp;ty=&amp;va=L&amp;vc=000000&amp;vf=Roboto+Mono&amp;vs=16&amp;tt=1&amp;trn=niv"></script>
+              </p>
+              
+          </div>
+    </div>
+  </main>
+
+
+  <footer class="footer d-flex align-items-center">
+    <div class="container text-center p-4">
+<!--       ATTENTION AOT STUDENTS!:
+      REPLACE [SEMESTER] & [YEAR] PLACEHOLDERS WITH YOUR CURRENT SEMESTER & YEAR -->
+      <p>We hope you enjoyed today's Bible Verse</p>
+      <p>Powered by the <a class="link-opacity-50" href="https://www.christianity.com/" target="_blank" rel="noopenner noreferrer">Christianity.com</a></p>
+    </div>
+  </footer>
+<!-- ATTENTION AOT STUDENTS!:
+  Visit getbootstrap.com and update the BELOW CDN to the latest version of Bootstrap. -->
+<!--   BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<!--   CUSTOM JS -->
+  <script src="script.js"></script>
 </body>
 </html>
